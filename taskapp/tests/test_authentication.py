@@ -67,7 +67,7 @@ class RegisterTests(TestCase):
 
 
 
-    def test_create_invalid_Task(self):
+    def test_create_valid_Task(self):
         response = self.client.post(
             reverse('task'),
             data=json.dumps(self.invalid_payload),
